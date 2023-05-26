@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vanessa Bernal</title>
+	<link rel="stylesheet" type="text/css" href="../css/prueba.css">
+</head>
+<body>
+	<div class="contenedor">
+		<header>
+			<h1>Backend Developer</h1>
+			<nav>
+				<ul>
+					<li><a href="#my_profile">My Profile</a></li>
+					<li><a href="#hobbies">Hobbies</a></li>
+					<li><a href="#about">About me</a></li>
+					<li> <a href="#im_interested">I'm interested in ...</a></li>
+					<li><a href="#social">Social media</a></li>
+					<li><a href="#song">My Favorite Song</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main>
+			<h3 id="my_profile">Vanessa Bernal</h3>
+			<div class="acerca">
+				<section>
+					<img src="yo.png" alt="My profile">
+				</section>
+				<section >
+					<h2 >About me</h2>
+					<p class="about">Tengo experiencia en resolución de problemas de negocio usando algoritmos de manipulación de datos, así como en el paradigma de orientación a objetos. Modelado UML. Inmutabilidad e implementación nativa de paralelismo sin fisuras.</p>
+				</section>
+			</div>
+		
+			<div class="listas">
+		
+				<section class="intereses">
+					<h2 id="im_interested">I'm interested in ...</h2>
+					<ol>
+						<li><img src="./golang.png" alt=""></li>
+						<li><img src="./meli.jpg" alt=""></li>
+						<li><img src="./exterior.webp" alt=""></li>
+					</ol>
+				</section>
+		
+				<section class="hobies">
+					<h2 id="hobbies">My hobbies</h2>
+					<ul>
+						<li><img src="./nadar.jpg" alt=""></li>
+						<li><img src="./cantar.webp" alt=""></li>
+						<li><img src="./leer.jpg" alt=""></li>
+					</ul>
+				</section>
+				
+				<section class="conocimientos">
+					<h2>Lenguajes</h2>
+					<dl>
+						<dl>
+							<dt>Python</dt>
+							<dd><img src="./python.webp" alt=""></dd>
+						</dl>
+						<dl>
+							<dt>JavaScript</dt>
+							<dd><img src="./JavaScript.png" alt=""></dd>
+						</dl>
+						<dl>
+							<dt>Java</dt>
+							<dd><img src="./java.jpg" alt=""></dd>
+						</dl>
+					</dl>
+				</section>
+				
+			</div>
+			<section>
+				<audio id="song" src="./LaCostaDelSilencio.mp3" controls></audio>
+			</section>
+		</main>
+		<footer>
+			<h2>Deja tus datos para ser contactado</h2>
+			<form>
+				<label for="name">Nombre:</label>
+				<input type="text" id="name" name="name">
+		
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email">
+		
+				<label for="telefono">Teléfono:</label>
+				<input type="tel" id="telefono" name="telefono" required>
+		
+				<label for="message">Mensaje:</label>
+				<textarea id="message" name="message"></textarea>
+		
+				<button type="submit">Enviar</button>
+			</form>
+		</footer>
+	</div>
+</body>
+</html>
