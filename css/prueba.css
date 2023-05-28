@@ -1,34 +1,29 @@
-*{
+* {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-}
-.contenedor {
-	box-sizing: border-box;
-	background-color:#1a1a1a;
 	font-family: Arial, sans-serif;
+}
+
+.contenedor {
+	background-color: #1a1a1a;
 	font-size: 16px;
-	margin: 0;
-	padding: 0;
 	color: #ccc;
 	width: 100%;
 }
 
 header {
 	background-color: #0f0f0f;
-	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-	padding: 20px;
-	position: fixed;
+	padding: 1.5rem;
+	position: sticky;
 	top: 0;
 	width: 100%;
 	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
 }
-.menu{
-	display: none;
-}
-#menu{
-	display: none;
-}
+
 nav ul {
 	list-style: none;
 	margin: 0;
@@ -50,36 +45,40 @@ nav a:hover {
 }
 
 main {
-	margin-top: 100px;
 	padding: 20px;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
+	gap: 1.5rem;
 }
-.acerca{
+
+.acerca {
 	display: flex;
 	justify-content: center;
 	gap: 3rem;
 }
 
-.acerca section{
+.acerca section {
 	display: flex;
 	flex-direction: column;
 	width: 40vw;
 }
-h3{
+
+h3 {
 	font-size: 3rem;
 	align-self: center;
 }
-img{
+
+img {
 	margin-right: 1rem;
 	align-self: flex-end;
 	height: 35vh;
 	width: 20rem;
 	border-radius: 20px;
 }
-.about{
+
+.about {
 	width: 30vw;
 }
 
@@ -90,149 +89,206 @@ img{
 	padding: 2rem;
 	gap: 2rem;
 }
-.listas h2{
+
+.listas h2 {
 	font-size: 2rem;
+	margin-bottom: 1rem;
 }
-.intereses ol, .hobies ul, .conocimientos dl{
+
+.intereses ol,
+.hobies ul,
+.conocimientos dl {
 	display: flex;
 	justify-content: center;
 	gap: 2rem;
 
 }
-.intereses img, .hobies img, .conocimientos img{
+
+.intereses img,
+.hobies img,
+.conocimientos img {
 	height: 25vh;
 	width: 20rem;
 	opacity: 0.8;
 }
 
-.conocimientos dl dl{
+.conocimientos dl dl {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-footer{
+footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	background-color: #0f0f0f;
-	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	padding: 20px;
-}
-form{
-	width: 50vw;
-}
-form label {
-	display: block;
-	margin-bottom: 10px;
-}
-
-form input[type="text"],
-form input[type="email"],
-form input[type="tel"],
-form textarea {
-	border: none;
-	border-radius: 5px;
-	padding: 10px;
+	gap: 1rem;
 	width: 100%;
-	margin-bottom: 15px;
 }
 
-form input:enabled{
-	border: none;
-}
-
-form input[type="submit"] {
-	background-color: #fff;
-	border: 1
-}
-
-form button{
-	padding: 15px 30px;
-	background-color: rgba(0, 183, 255, 0.468);
-	border: none;
-	border-radius: 10px;
+footer h3 {
 	font-size: 1.2rem;
-	color: white;
 }
 
-@media (max-width: 820px) {
+footer h3 a {
+	color: #ccc;
+	text-decoration: none;
 
+}
 
-	.listas h2{
-		font-size: 2rem;
-		margin: 0;
+footer svg {
+	height: 2rem;
+	width: 2rem;
+}
+
+footer div {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	height: 4rem;
+}
+
+/* media query de mini pc ................................... */
+@media (max-width:1024px) {
+
+	.acerca img {
+		align-self: flex-end;
+		height: 15rem;
+		width: 19rem;
+		border-radius: 20px;
 	}
-	.intereses ol, .hobies ul, .conocimientos dl{
+
+	.intereses img,
+	.hobies img,
+	.conocimientos img {
+		width: 15rem;
+	}
+}
+
+/* Media query de tablet ............................... */
+@media (max-width: 768px) {
+
+	header {
+
+		width: 100%;
+
+	}
+
+	main {
+		width: 100%;
+		padding: 20px 10px;
+	}
+
+	.acerca {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.acerca section {
+		display: flex;
+		flex-direction: column;
+		width: 40vw;
+	}
+
+	h3 {
+		font-size: 3rem;
+		align-self: center;
+	}
+
+	.acerca img {
+		margin-right: 0;
+		width: 18rem;
+	}
+
+	.about {
+		width: 18rem;
+	}
+
+	.listas h2 {
+		margin-bottom: 1rem;
+	}
+
+	.intereses ol,
+	.hobies ul,
+	.conocimientos dl {
 		display: flex;
 		justify-content: center;
 		gap: 0.5rem;
-	
 	}
-	.intereses img, .hobies img, .conocimientos img{
+
+	.intereses img,
+	.hobies img,
+	.conocimientos img {
 		height: 15vh;
 		width: 10rem;
 		opacity: 0.8;
 	}
-	
-	.conocimientos dl dl{
+
+	.conocimientos dl dl {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 
+	footer {
+		width: 100%;
+	}
+
 }
 
+/* Media queri formato cel............................................. */
 @media (max-width:360px) {
-	body{
-		display: block;
-		width: auto;
+	header {
+		padding: 1rem;
 	}
-	header{
-		padding: 10px;
-	}
-	h1{
-		margin: 5px;
+
+	h1 {
 		text-align: center;
 		font-size: 2rem;
 	}
-	nav ul{
+
+	nav ul {
 		display: grid;
 		grid-template-columns: auto auto;
 		grid-template-rows: 2rem 2rem 2rem;
 		text-align: center;
 	}
-	main {
-		width: 100vw;
-		margin-top: 150px;
-	}
-	h3{
-		font-size: 2rem;
-		margin: 2rem 0;
-		width: 15rem;
 
+	h3 {
+		font-size: 2rem;
+		width: 15rem;
 	}
-	.acerca{
-		width: auto;
-		gap: 0.5rem;
-	}
-	.acerca section{
+
+	.acerca {
 		display: flex;
 		flex-direction: column;
 		width: auto;
-
+		gap: 0.5rem;
 	}
-	
-	img{
-		margin-right: 1rem;
+
+	.acerca section {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+		padding: 0 2rem;
+	}
+
+	.acerca img {
+
 		align-self: flex-end;
 		justify-self: center;
 		height: 25vh;
-		width: 10rem;
+		width: 14rem;
 		border-radius: 20px;
 	}
-	.about{
+
+	.about {
 		width: auto;
 		font-size: 0.75rem;
 	}
@@ -245,26 +301,36 @@ form button{
 		gap: 2rem;
 
 	}
-	.listas h2{
+
+	.listas h2 {
 		font-size: 1.5rem;
 	}
-	.intereses h2, .hobies h2, .conocimientos h2{
+
+	.intereses h2,
+	.hobies h2,
+	.conocimientos h2 {
 		padding-bottom: 1rem;
 	}
-	.intereses ol, .hobies ul, .conocimientos dl{
+
+	.intereses ol,
+	.hobies ul,
+	.conocimientos dl {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		gap: 1rem;
-	
+
 	}
-	.intereses img, .hobies img, .conocimientos img{
+
+	.intereses img,
+	.hobies img,
+	.conocimientos img {
 		height: 25vh;
 		width: 15rem;
 		opacity: 0.8;
 	}
-	
-	.conocimientos dl dl{
+
+	.conocimientos dl dl {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
